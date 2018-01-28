@@ -8,19 +8,31 @@ scanf ("%d%d%d",&a,&b,&c);
 
 if (a>b)
 {
-if(a>c)
-printf ("%d",a);
+  if(a>c && a>=0)
+     printf ("%d",a);
 
-else
-printf ("%d",c);
+  else if (a>c && a<0)
+    printf ("0");
+
+  else if (c>a && c>=0)
+    printf ("%d",c);
+  
+  else if (c>a && c<0)
+    printf ("0");
 }
 
 else
 {
-if(b>c)
-printf ("%d",b);
+ if (b>c && b>=0)
+    printf ("%d",b);
 
-else
-printf ("%d",c);
+  else if (b>c && b<0)
+    printf ("0");
+
+  else if (c>b && c>=0)
+    printf ("%d",c);
+  
+  else if (c>b && c<0)
+    printf ("0");
 }
 }
